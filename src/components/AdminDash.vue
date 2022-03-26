@@ -55,9 +55,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mt-2 shadow-sm">
+                <div class="card mt-2 mb-2 shadow-sm">
                     <div class="card-body">
                         <p class="card-title mb-4">Monthly Earning</p>
+                        <div class="row">
+                            <div class="col-sm-6"></div>
+                            <div class="col-sm-6"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,6 +108,12 @@
                                 <p>This is a Card Body</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h4 clas="card-title">Charts card...</h4>
+                        <p>or something like that</p>
                     </div>
                 </div>
             </div>
