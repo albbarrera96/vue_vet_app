@@ -30,7 +30,7 @@
                                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                     </div>
                                     <div class="d-grid gap-2">
-                                        <button type="submit" class="btn btn-dark">Submit</button>
+                                        <a href="/#/admin" type="submit" class="btn btn-dark">Submit</a>
                                     </div>
                                 </form>
                             </div>
