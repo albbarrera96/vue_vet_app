@@ -1,4 +1,5 @@
 <template>
+    <!--COLLAPSE?--->
     <ul class="nav nav-tabs">
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Doctors</a>
@@ -14,70 +15,87 @@
         </li>
     </ul>
     <!--DOCTORS-->
-    <table class="table table-light table-striped table-hover mt-5">
-        <thead>
-            <h3>Doctors</h3>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Contact No</th>
-                <th scope="col">Email</th>
-                <th scope="col">Details</th>
-            </tr>
-        </thead>
-            <tbody>
-                <tr v-for="(Doctor, index) in Doctors" :key="index">
-                    <td>{{Doctor.code}}</td>
-                    <td>{{Doctor.id}}</td>
-                    <td>{{Doctor.name}}</td>
-                    <td>{{Doctor.phoneNo}}</td>
-                    <td>{{Doctor.email}}</td>
-                    <td>
-                        <a href="#">View Details</a>
-                    </td>
-                </tr>
-            </tbody>
-    </table>
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-light table-striped table-hover mt-5">
+                    <thead>
+                        <h3>Doctors</h3>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Contact No</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(Doctor, index) in Doctors" :key="index">
+                            <td>{{Doctor.code}}</td>
+                            <td>{{Doctor.id}}</td>
+                            <td>{{Doctor.name}}</td>
+                            <td>{{Doctor.phoneNo}}</td>
+                            <td>{{Doctor.email}}</td>
+                            <td>
+                                <a href="#">View Details</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
     <!---Receptionists----->
-    <table class="table table-light table-striped table-hover mt-5">
-        <thead>
-            <h3>Receptionists</h3>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Contact No</th>
-                <th scope="col">Email</th>
-                <th scope="col">Details</th>
-            </tr>
-        </thead>
-            <tbody>
-                <tr v-for="(Receptionist, index) in Receptionists" :key="index">
-                    <td>{{Receptionist.code}}</td>
-                    <td>{{Receptionist.id}}</td>
-                    <td>{{Receptionist.name}}</td>
-                    <td>{{Receptionist.phoneNo}}</td>
-                    <td>{{Receptionist.email}}</td>
-                    <td>
-                        <a href="#">View Details</a>
-                    </td>
-                </tr>
-            </tbody>
-    </table>
+    <div class="card shadow-sm mt-2">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-light table-striped table-hover mt-5">
+                    <thead>
+                        <h3>Receptionists</h3>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Contact No</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(Receptionist, index) in Receptionists" :key="index">
+                            <td>{{Receptionist.code}}</td>
+                            <td>{{Receptionist.id}}</td>
+                            <td>{{Receptionist.name}}</td>
+                            <td>{{Receptionist.phoneNo}}</td>
+                            <td>{{Receptionist.email}}</td>
+                            <td>
+                                <a href="#">View Details</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
     <!--Patients--->
-    <table class="table table-light table-striped table-hover mt-5">
-        <thead>
-            <h3>Patients</h3>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Owner</th>
-                <th scope="col">Owner's phone</th>
-                <th scope="col">Owner's Email</th>
-                <th scope="col">Details</th>
-            </tr>
-        </thead>
+    <div class="card shadow-sm mt-2">
+        <div class="card-body">
+                <div class="table-responsive">
+        <table class="table table-light table-striped table-hover mt-5">
+            <thead>
+                <h3>Patients</h3>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Owner</th>
+                    <th scope="col">Owner's phone</th>
+                    <th scope="col">Owner's Email</th>
+                    <th scope="col">Details</th>
+                </tr>
+            </thead>
             <tbody>
                 <tr v-for="(Patient, index) in Patients" :key="index">
                     <td>{{Patient.code}}</td>
@@ -90,7 +108,11 @@
                     </td>
                 </tr>
             </tbody>
-    </table>
+        </table>
+    </div>
+        </div>
+    </div>
+
 </template>
 
 <script>
