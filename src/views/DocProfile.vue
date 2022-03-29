@@ -1,18 +1,18 @@
 <template>
   <Navbar />
-    <div class="container-fluid bg-light">
+  <div class="container-fluid bg-light">
     <Dash />
-    <footer></footer>
   </div>
+  
 </template>
 
 <script>
 
 import Navbar from '@/components/Navbar.vue'
-import Dash from '@/components/AdminDash.vue'
+import Dash from '@/components/DocDash.vue'
 
 export default {
-    name: 'AdminProfile',
+    name: 'DocProfile',
     components: {
         Navbar,
         Dash
