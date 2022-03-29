@@ -121,7 +121,7 @@
                 <div class="col-lg-12">
                     <div class="card shadow-sm">
                         <div class="card-body">
-                             
+                             <Personal />
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,11 @@
 </template>
 
 <script>
+import Personal from './Personal.vue'
+
 export default {
-    
+    components: {
+        Personal,
+    }
 }
 </script>

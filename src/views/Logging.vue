@@ -9,6 +9,14 @@ export default {
     name: 'Logging',
     components: {
         LogComponent
-    }
+    },
+    data() {
+        return {
+            methods: {
+                
+            },
+        }
+    },
+    
 }
 </script>
