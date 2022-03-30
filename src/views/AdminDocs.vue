@@ -1,14 +1,13 @@
 <template>
   <Navbar />
   <Topnav/>
-    <div class="container-fluid bg-light">
-    <Docs />
-  </div>
-  <footer>
-    <div class="container-fluid bg-light">
-      <p></p>
-    </div>  
-  </footer>
+    <div class="container-fluid">
+      <Docs />
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
 </template>
 
 <script>

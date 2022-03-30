@@ -130,7 +130,7 @@ export default {
             ],
             Patients: [
                 {
-                    code: 'PT101', name: 'Mysterio', owner: 'Chuck Norris', ownersPhone: '123456789', ownersEmail: 'chucknorris@gmail.com'
+                    code: 'PT101', name: 'McQuade', owner: 'Chuck Norris', ownersPhone: '123456789', ownersEmail: 'chucknorris@gmail.com'
                 }
             ]
         }

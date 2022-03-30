@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid ms-5">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -8,7 +8,7 @@
                 Doctors
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDoctors">
-                <li><a class="dropdown-item" href="#">Doctors List</a></li>
+                <li><a class="dropdown-item" href="/#/admin/docs">Doctors List</a></li>
                 <li><a class="dropdown-item" href="#">Add new doctor</a></li>
               </ul>
             </li>

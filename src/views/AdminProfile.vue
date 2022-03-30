@@ -1,13 +1,10 @@
 <template>
   <Navbar />
   <Topnav/>
-    <div class="container-fluid bg-light">
+    <div class="container-fluid">
     <Dash />
   </div>
   <footer>
-    <div class="container-fluid bg-light">
-      <p></p>
-    </div>  
   </footer>
 </template>
 

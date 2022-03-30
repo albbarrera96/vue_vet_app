@@ -16,7 +16,7 @@
                             <div class="col-7">
                                 <div class="text-light p-3">
                                     <h5 class="text-light">Welcome Back!</h5>
-                                    <p>Admin Dashboard</p>
+                                    <p>Doctor Dashboard</p>
                                 </div>
                             </div>
                             <!---<div class="col-5 align-self-end">
@@ -27,8 +27,8 @@
                     <div class="card-body pt-2">
                         <div class="row">
                             <div class="col-sm-4">
-                                <p class="font-size-15 text-truncate">Admin Profile</p>
-                                <p class="text-muted mb-0 text-truncate">Admin Dash</p>
+                                <p class="font-size-15 text-truncate">Doctor Profile</p>
+                                <p class="text-muted mb-0 text-truncate">Doctor Dash</p>
                             </div>
                             <div class="col-sm-8">
                                 <div class="row pt-4">
@@ -119,7 +119,14 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <Personal />
+                    <div class="card shadow-sm">
+                        <div class="card-title mt-3 ms-3">
+                            <h4>Today's Appointments</h4> 
+                        </div>
+                        <div class="card-body">
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,11 +135,11 @@
 </template>
 
 <script>
-import Personal from './Personal.vue'
+// import Personal from './Personal.vue'
 
 export default {
     components: {
-        Personal,
+        //Personal,
     }
 }
 </script>

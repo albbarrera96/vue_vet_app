@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Logging from '../views/Logging.vue'
+import Login from '../views/Loging.vue'
 import AdminProfile from '../views/AdminProfile.vue'
 import AdminDocs from '../views/AdminDocs.vue'
 import DocProfile from '../views/DocProfile'
@@ -20,9 +20,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/logging',
-    name: 'Logging',
-    component: Logging
+    path: '/login',
+    name: 'Login',
+    component: Login
   },
   {
     path:'/admin',

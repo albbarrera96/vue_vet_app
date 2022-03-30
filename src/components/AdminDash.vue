@@ -48,7 +48,7 @@
                                     </div>
                                     <div class="col-6">
                                         <p class="mb-0">##</p>
-                                        <label class="text-muted mb-0">Customers</label>                                      
+                                        <label class="text-muted mb-0">Owners</label>                                      
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mt-4">
+                <div class="card mt-4 shadow-sm">
                     <div class="card-body">
                         <h4 clas="card-title">Charts card...</h4>
                         <p>or something like that</p>
