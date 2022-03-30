@@ -2,7 +2,7 @@
   <Navbar />
   <Topnav/>
     <div class="container-fluid bg-light">
-    <Dash />
+    <Docs />
   </div>
   <footer>
     <div class="container-fluid bg-light">
@@ -14,14 +14,14 @@
 <script>
 
 import Navbar from '@/components/Navbar.vue'
-import Dash from '@/components/AdminDash.vue'
+import Docs from '@/components/AdminDocs.vue'
 import Topnav from '@/components/AdminTopnav.vue'
 
 export default {
-    name: 'AdminProfile',
+    name: 'AdminDocs',
     components: {
         Navbar,
-        Dash,
+        Docs,
         Topnav
     }
 }
