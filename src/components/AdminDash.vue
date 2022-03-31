@@ -113,7 +113,9 @@
                 <div class="card mt-4 shadow-sm">
                     <div class="card-body">
                         <h4 clas="card-title">Charts card...</h4>
-                        <p>or something like that</p>
+                        <div class="text-center">
+                            <Chart/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -128,10 +130,12 @@
 
 <script>
 import Personal from './Personal.vue'
+import Chart from './BarChart.vue'
 
 export default {
     components: {
         Personal,
+        Chart
     }
 }
 </script>
