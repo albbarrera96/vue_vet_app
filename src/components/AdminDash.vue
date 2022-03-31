@@ -61,6 +61,7 @@
                         <div class="row">
                             <div class="col-sm-6"></div>
                             <div class="col-sm-6"></div>
+                            <Pie/>
                         </div>
                     </div>
                 </div>
@@ -131,11 +132,13 @@
 <script>
 import Personal from './Personal.vue'
 import Chart from './BarChart.vue'
+import Pie from './PieChart.vue'
 
 export default {
     components: {
         Personal,
-        Chart
+        Chart,
+        Pie
     }
 }
 </script>

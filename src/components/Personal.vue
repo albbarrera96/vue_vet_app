@@ -1,6 +1,6 @@
 <template>
     <!--COLLAPSE?--->
-    <div class="btn-group my-2" role="group" aria-label="Basic example">
+    <div class="btn-group my-1" role="group" aria-label="Basic example">
         <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#collapseDoctors">Doctors</button>
         <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#collapseReceptionists">Receptionists</button>
         <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#collapsePatients">Patients</button>
