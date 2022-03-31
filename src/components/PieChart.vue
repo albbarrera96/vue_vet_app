@@ -1,6 +1,6 @@
 <template>
     <div id="chart">
-         <apexchart width="300" type="donut" :options="options" :series="series"></apexchart>
+         <apexchart width="300" type="donut" :options="chartOptions" :series="series" :labels="labels"></apexchart>
       </div>
 </template>
 
@@ -14,8 +14,11 @@ export default {
     },
     data() {
         return {
-            options: {},
-            series: [44, 55, 41, 17, 15]
+            series: [44, 55, 41, 17, 15],
+            chartOptions: {
+                labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+                
+            },
          }
     }
 }

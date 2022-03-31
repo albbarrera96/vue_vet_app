@@ -57,10 +57,15 @@
                 </div>
                 <div class="card mt-2 mb-2 shadow-sm">
                     <div class="card-body">
-                        <p class="card-title mb-4">Monthly Earning</p>
+                        <p class="card-title mb-2">Monthly Earning</p>
                         <div class="row">
-                            <div class="col-sm-6"></div>
-                            <div class="col-sm-6"></div>
+                            <div class="col-sm-6">
+                                <h3>$0</h3>
+                                <label class="text-muted mb-0">Patients</label>
+                            </div>
+                            <div class="col-sm-6">
+
+                            </div>
                             <Pie/>
                         </div>
                     </div>
@@ -68,45 +73,51 @@
             </div>
             <div class="col-xl-8">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-2">
                         <div class="card shadow-sm">
                             <div class="card-body">
-                                <p>This is a Card Body</p>
+                                <h6 class="text-muted">Total Appointments</h6>
+                                <h4>4</h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card shadow-sm">
                             <div class="card-body">
-                                <p>This is a Card Body</p>
+                                <h6 class="text-muted">Today's Earning</h6>
+                                <h4>0</h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card shadow-sm">
                             <div class="card-body">
-                                <p>This is a Card Body</p>
+                                <h6 class="text-muted">Revenues</h6>
+                                <h4>0</h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card shadow-sm">
                             <div class="card-body">
-                                <p>This is a Card Body</p>
+                                <h6 class="text-muted">Today's Appointments</h6>
+                                <h4>7</h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card shadow-sm">
                             <div class="card-body">
-                                <p>This is a Card Body</p>
+                                <h6 class="text-muted">Tomorrow's Appointments</h6>
+                                <h4>3</h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card shadow-sm">
                             <div class="card-body">
-                                <p>This is a Card Body</p>
+                                <h6 class="text-muted">Upcoming Appointments</h6>
+                                <h4>20</h4>
                             </div>
                         </div>
                     </div>
@@ -114,6 +125,7 @@
                 <div class="card mt-4 shadow-sm">
                     <div class="card-body">
                         <h4 clas="card-title">Charts card...</h4>
+                        <h5 class="text-muted ms-4">Record</h5>
                         <div class="text-center">
                             <Chart/>
                         </div>
