@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Login from '../views/Loging.vue'
 import AdminProfile from '../views/AdminProfile.vue'
 import AdminDocs from '../views/AdminDocs.vue'
+import DocDocs from '../views/DocDocs.vue'
 import DocProfile from '../views/DocProfile'
 
 const routes = [
@@ -39,6 +40,11 @@ const routes = [
     name: 'Doctor',
     component: DocProfile
   },
+  {
+    path: '/doctor/docs',
+    name: 'DocDocs',
+    component: DocDocs
+  }
 ]
 
 const router = createRouter({

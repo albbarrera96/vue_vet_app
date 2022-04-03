@@ -6,7 +6,7 @@
         <h1>
           <br>
           <div class="display-2">Mensitooo!</div>
-          <div class="display-5 text-muted"> Hice un template de Bootstrap con Vue</div>
+          <div class="display-5 text-muted"> Acabo de hacer una landing page para mi App</div>
         </h1>
         <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <a href="#/login" class="btn btn-secondary btn-lg">Click Here</a>

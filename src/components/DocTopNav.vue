@@ -8,7 +8,7 @@
                 Doctors
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDoctors">
-                <li><a class="dropdown-item" href="/#/admin/docs">Doctors List</a></li>
+                <li><a class="dropdown-item" href="/#/doctor/docs">Doctors List</a></li>
               </ul>
             </li>
             <!------>

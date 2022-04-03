@@ -10,78 +10,23 @@
     <div class="collapse" id="collapseDoctors">
         <div class="card shadow-sm">
             <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-light table-striped table-hover mt-5">
-                        <thead>
-                            <h3>Doctors</h3>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">ID</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Contact No</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Details</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr v-for="(Doctor, index) in Doctors" :key="index">
-                                <td>{{Doctor.code}}</td>
-                                <td>{{Doctor.id}}</td>
-                                <td>{{Doctor.name}}</td>
-                                <td>{{Doctor.phoneNo}}</td>
-                                <td>{{Doctor.email}}</td>
-                                <td>
-                                    <a href="#">View Details</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <Doctors :AddNewDoctor = false />
             </div>
         </div>
     </div>
-
-
     <!---Receptionists----->
     <div class="collapse" id="collapseReceptionists">
         <div class="card shadow-sm mt-2">
             <div class="card-body">
-                <Receptionists/>
+                <Receptionists :AddReceptionist = false />
             </div>
         </div>
     </div>
-
     <!--Patients--->
     <div class="collapse" id="collapsePatients">
         <div class="card shadow-sm mt-2">
             <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-light table-striped table-hover mt-5">
-                        <thead>
-                            <h3>Patients</h3>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Owner</th>
-                                <th scope="col">Owner's phone</th>
-                                <th scope="col">Owner's Email</th>
-                                <th scope="col">Details</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr v-for="(Patient, index) in Patients" :key="index">
-                                <td>{{Patient.code}}</td>
-                                <td>{{Patient.name}}</td>
-                                <td>{{Patient.owner}}</td>
-                                <td>{{Patient.ownersPhone}}</td>
-                                <td>{{Patient.ownersEmail}}</td>
-                                <td>
-                                    <a href="#">View Details</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <Patients :AddNewPatient = false />
             </div>
         </div>
     </div>
@@ -90,23 +35,18 @@
 
 <script>
 import Receptionists from '../components/Receptionists.vue'
+import Patients from '../components/Patients.vue'
+import Doctors from '../components/Doctors.vue'
 
 export default {
     components: {
-        Receptionists
+        Receptionists,
+        Patients,
+        Doctors
     },
     data() {
         return {
-            Doctors: [
-                {
-                    code: 'D101', id: '123456789', name: 'Doctor Mengueche', phoneNo: '555-12345', email: 'drmengueche@gmail.com'
-                }
-            ],
-            Patients: [
-                {
-                    code: 'PT101', name: 'McQuade', owner: 'Chuck Norris', ownersPhone: '123456789', ownersEmail: 'chucknorris@gmail.com'
-                }
-            ]
+
         }
     },
 }

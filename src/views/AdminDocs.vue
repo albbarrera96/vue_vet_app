@@ -1,19 +1,15 @@
 <template>
   <Navbar />
   <Topnav/>
-    <div class="container-fluid">
-      <Docs />
-      <br>
-      <br>
-      <br>
-      <br>
+    <div class="container-lg">
+      <Docs :AddNewDoctor = true />
     </div>
 </template>
 
 <script>
 
 import Navbar from '@/components/Navbar.vue'
-import Docs from '@/components/AdminDocs.vue'
+import Docs from '@/components/Doctors.vue'
 import Topnav from '@/components/AdminTopnav.vue'
 
 export default {
