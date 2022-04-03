@@ -9,7 +9,6 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDoctors">
                 <li><a class="dropdown-item" href="/#/admin/docs">Doctors List</a></li>
-                <li><a class="dropdown-item" href="#">Add new doctor</a></li>
               </ul>
             </li>
             <!------>
@@ -19,7 +18,6 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownReceptionists">
                 <li><a class="dropdown-item" href="#">Receptionists List</a></li>
-                <li><a class="dropdown-item" href="#">Add new Receptionist</a></li>
               </ul>
             </li>
             <!-------->    
@@ -28,8 +26,8 @@
                 Patients
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownPatients">
-                <li><a class="dropdown-item" href="#">Patients</a></li>
-                <li><a class="dropdown-item" href="#">Add New Patient</a></li> 
+                <li><a class="dropdown-item" href="#">Patients List</a></li>
+                <li><a class="dropdown-item" href="#">Add a new Patient</a></li>  
               </ul>
             </li>
             <!------>
@@ -38,8 +36,10 @@
                 Owners
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownOwners">
-                <li><a class="dropdown-item" href="#">Pet Owners List</a></li>
-                <li><a class="dropdown-item" href="#">Add Pet Owner</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>    
               </ul>
             </li>
             <!------>

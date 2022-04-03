@@ -32,6 +32,40 @@
                                     <div class="d-grid gap-2">
                                         <a href="/#/admin" type="submit" class="btn btn-dark">Submit</a>
                                     </div>
+                                    <div class="col-lg-12 text-center">
+                                        <div class="row mt-4">
+                                            <div class="col-5 ms-2 mx-5">
+                                                <label for="exampleInputEmail1" class="form-label">Log in as an Admin</label>
+                                            </div>
+                                            <div class="col">
+                                                <a href="/#/admin" class="btn btn-dark">Log In</a>
+                                            </div>  
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-5 ms-2 mx-5">
+                                                <label for="exampleInputEmail1" class="form-label">Log in as a Doctor</label>
+                                            </div>
+                                            <div class="col">
+                                                <a href="/#/doctor" class="btn btn-dark">Log In</a>
+                                            </div>  
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-6 ms-2 mx-3">
+                                                <label for="exampleInputEmail1" class="form-label">Log in as a Receptionist</label>
+                                            </div>
+                                            <div class="col">
+                                                <a href="/#/receptionist" class="btn btn-dark">Log In</a>
+                                            </div>  
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-5 ms-2 mx-5">
+                                                <label for="exampleInputEmail1" class="form-label">Log in as an Owner</label>
+                                            </div>
+                                            <div class="col">
+                                                <a href="/#/owner" class="btn btn-dark">Log In</a>
+                                            </div>  
+                                        </div>                                                                                                                           
+                                    </div>
                                 </form>
                             </div>
                         </div>

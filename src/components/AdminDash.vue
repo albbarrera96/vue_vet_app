@@ -85,7 +85,7 @@
                         <div class="card shadow-sm">
                             <div class="card-body">
                                 <h6 class="text-muted">Today's Earning</h6>
-                                <h4>0</h4>
+                                <h4>{{todayEarning}}$</h4>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                         <div class="card shadow-sm">
                             <div class="card-body">
                                 <h6 class="text-muted">Revenues</h6>
-                                <h4>0</h4>
+                                <h4>{{revenues}}$</h4>
                             </div>
                         </div>
                     </div>
@@ -125,7 +125,7 @@
                 <div class="card mt-4 shadow-sm">
                     <div class="card-body">
                         <h4 clas="card-title">Charts card...</h4>
-                        <h5 class="text-muted ms-4">Record</h5>
+                        <h5 class="text-muted mb-4">Record</h5>
                         <div class="text-center">
                             <Chart/>
                         </div>
@@ -151,6 +151,12 @@ export default {
         Personal,
         Chart,
         Pie
-    }
+    },
+    data() {
+        return {
+            todayEarning: 20,
+            revenues: 40
+        }
+    },
 }
 </script>

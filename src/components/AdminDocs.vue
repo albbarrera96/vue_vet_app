@@ -43,8 +43,106 @@
             Add new doctor
         </button>
         <div class="collapse mt-4 mb-4" id="collapseExample">
-            <div class="card card-body shadow-sm">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card px-4 shadow-sm py-4">
+                        <p class="h4">Basic Information</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row mb-2 mt-2">
+                                    <div class="col-md-12 form-group">
+                                        <label for="" class="control-label">First Name </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mb-2 mt-2">
+                                    <div class="col-md-12 form-group">
+                                        <label for="" class="control-label">Last Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mb-2 mt-2">
+                                    <div class="col-md-12 form-group">
+                                        <label for="" class="control-label">Email</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mb-2 mt-2">
+                                    <div class="col-md-12 form-group">
+                                        <label for="" class="control-label">Title</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mb-2 mt-2">
+                                    <div class="col-md-12 form-group">
+                                        <label for="" class="control-label">Degree</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mb-2 mt-2">
+                                    <div class="col-md-12 form-group">
+                                        <label for="" class="control-label">Experience</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>                                                                                                                                                                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row mb-2 mt-2">
+                                    <div class="col-md-12 form-group">
+                                        <label for="" class="control-label">Fees</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mb-2 mt-2">
+                                    <label for="" class="control-label">Available Days</label>
+                                    <div class="col-md-12 form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Sun</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">Mon</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                            <label class="form-check-label" for="inlineCheckbox3">Tue</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Wed</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">Thu</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                            <label class="form-check-label" for="inlineCheckbox3">Fri</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                            <label class="form-check-label" for="inlineCheckbox3">Sat</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 form-group">
+                                            <label for="" class="control-label">Slots Time (In Minute)</label>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <p for="" class="control-label">Schedule</p>
+                                            <label for="" class="control-label">From</label>
+                                            <input type="time" class="form-control">
+                                            <label for="" class="control-label">To</label>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                    </div>                                                                                                                       
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>      
     </div>
@@ -66,6 +164,9 @@ export default {
                     code: 'D103', id: '123456789', name: 'Doctor Faustus', phoneNo: '555-55555', email: 'drfaustus@gmail.com'
                 }                
             ],
+            methods: {
+                
+            },
         }
     },
 

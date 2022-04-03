@@ -34,7 +34,7 @@
                                 <div class="row pt-4">
                                     <div class="col-6">
                                         <p class="mb-0">##</p>
-                                        <label class="text-muted mb-0">Doctors</label>
+                                        <label class="text-muted mb-0">Total Appointments</label>
                                     </div>
                                     <div class="col-6">
                                         <p class="mb-0">##</p>
@@ -71,50 +71,33 @@
                     <div class="col-md-4">
                         <div class="card shadow-sm">
                             <div class="card-body">
-                                <p>This is a Card Body</p>
+                                <h6 class="text-muted">Today's Appointments</h6>
+                                <a class="h4" href="#">0</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card shadow-sm">
                             <div class="card-body">
-                                <p>This is a Card Body</p>
+                                <h6 class="text-muted">Tomorrow's Appointments</h6>
+                                <a class="h4" href="#">4</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card shadow-sm">
                             <div class="card-body">
-                                <p>This is a Card Body</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <p>This is a Card Body</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <p>This is a Card Body</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <p>This is a Card Body</p>
+                                <h6 class="text-muted">Upcoming Appointments</h6>
+                                <a class="h4" href="#">10</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mt-4">
+                <div class="card mt-4 mb-4">
                     <div class="card-body">
                         <h4 clas="card-title">Charts card...</h4>
                         <p>or something like that</p>
+                        <BarChart/>
                     </div>
                 </div>
             </div>
@@ -125,7 +108,6 @@
                             <h4>Today's Appointments</h4> 
                         </div>
                         <div class="card-body">
-
                         </div>
                     </div>
                 </div>
@@ -137,10 +119,14 @@
 
 <script>
 // import Personal from './Personal.vue'
+import BarChart from './BarChart.vue'
+import TopNav from './DocTopNav.vue'
 
 export default {
     components: {
         //Personal,
+        TopNav,
+        BarChart
     }
 }
 </script>
