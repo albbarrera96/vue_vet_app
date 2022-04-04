@@ -10,7 +10,7 @@
 
 import Navbar from '@/components/Navbar.vue'
 import Docs from '@/components/Doctors.vue'
-import Topnav from '@/components/AdminTopnav.vue'
+import Topnav from '@/components/admin/AdminTopnav.vue'
 
 export default {
     name: 'AdminDocs',

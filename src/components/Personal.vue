@@ -36,7 +36,7 @@
 <script>
 import Receptionists from '../components/Receptionists.vue'
 import Patients from '../components/Patients.vue'
-import Doctors from '../components/Doctors.vue'
+import Doctors from './Doctors.vue'
 
 export default {
     components: {

@@ -1,22 +1,24 @@
 <template>
   <Navbar />
   <TopNav/>
-  <Dash />
+  <div class="container-lg">
+    <DocList :AddNewDoctor = false />
+  </div>
   
 </template>
 
 <script>
 
 import Navbar from '@/components/Navbar.vue'
-import TopNav from '@/components/DocTopNav.vue'
-import Dash from '@/components/DocDash.vue'
+import TopNav from '@/components/doctor/DocTopNav.vue'
+import DocList from '@/components/Doctors.vue'
 
 export default {
     name: 'DocProfile',
     components: {
         Navbar,
         TopNav,
-        Dash
+        DocList
     }
 }
 </script>

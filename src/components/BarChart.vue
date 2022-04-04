@@ -19,6 +19,7 @@ export default {
     },
   data: function() {
     return {
+      Appointments: 99,
       chartOptions: {
         chart: {
           id: "vuechart-example",

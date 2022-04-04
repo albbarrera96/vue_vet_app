@@ -6,7 +6,7 @@
         <h1>
           <br>
           <div class="display-2">Mensitooo!</div>
-          <div class="display-5 text-muted"> Acabo de hacer una landing page para mi App</div>
+          <div class="display-5 text-muted">Acabo de hacer una landing page para mi App</div>
         </h1>
         <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <a href="#/login" class="btn btn-secondary btn-lg">Click Here</a>
@@ -118,12 +118,25 @@
 <script>
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue'
+import axios from 'axios'
 
 export default {
   name: 'Home',
   components: {
     Navbar,
-  }
+    axios
+  },
+  data() {
+    return {
+      
+    }
+  },
+  mounted() {
+    axios.get('https://jsonplaceholder.typicode.com/posts')
+    .then( function( response ) {
+      console.log(response)
+    })
+  },
 
 }
 </script>

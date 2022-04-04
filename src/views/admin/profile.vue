@@ -11,8 +11,8 @@
 <script>
 
 import Navbar from '@/components/Navbar.vue'
-import Dash from '@/components/AdminDash.vue'
-import Topnav from '@/components/AdminTopnav.vue'
+import Dash from '@/components/admin/AdminDash.vue'
+import Topnav from '@/components/admin/AdminTopnav.vue'
 
 export default {
     name: 'AdminProfile',
