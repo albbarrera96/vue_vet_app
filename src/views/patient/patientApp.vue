@@ -1,10 +1,9 @@
 <template>
     <Navbar />
     <TopNav />
-    <div class="container-lg mt-4">
-        <div class="card">
-            <AppointmentList :AddNewAppointment = false />
-        </div>
+    <div class="container-lg">
+        <h3 class="mt-4 mb-4">Appointments</h3>
+        <AppointmentList :AddNewAppointment = false />
     </div>
 </template>
 

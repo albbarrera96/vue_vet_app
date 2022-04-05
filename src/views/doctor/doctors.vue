@@ -2,6 +2,10 @@
   <Navbar />
   <TopNav/>
   <div class="container-lg">
+        <div class="page-title-box d-flex align-items-center justify-content-between mt-4">
+          <h4 class="mb-0 font-size-18">DOCTORS LIST</h4>
+          <a class="page-title-right link-dark" href="/#/doctor">Return to your Dashboard</a>
+        </div>
     <DocList :AddNewDoctor = false />
   </div>
   
