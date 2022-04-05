@@ -59,7 +59,7 @@
                                         </div>
                                         <div class="row mt-4">
                                             <div class="col-5 ms-2 mx-5">
-                                                <label for="exampleInputEmail1" class="form-label">Log in as an Owner</label>
+                                                <label for="exampleInputEmail1" class="form-label">Log in as a Client</label>
                                             </div>
                                             <div class="col">
                                                 <a href="/#/owner" class="btn btn-dark">Log In</a>

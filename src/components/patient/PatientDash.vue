@@ -16,7 +16,7 @@
                             <div class="col-7">
                                 <div class="text-light p-3">
                                     <h5 class="text-light">Welcome Back!</h5>
-                                    <p>Doctor Dashboard</p>
+                                    <p>Patient's Name</p>
                                 </div>
                             </div>
                             <!---<div class="col-5 align-self-end">
@@ -26,29 +26,29 @@
                     </div>
                     <div class="card-body pt-2">
                         <div class="row">
-                            <div class="col-sm-4">
-                                <p class="font-size-15 text-truncate">Doctor Profile</p>
-                                <p class="text-muted mb-0 text-truncate">Doctor Dash</p>
+                            <div class="col-md-6">
+                                <p class="font-size-15 text-truncate">Owner: </p>
+                                <a href="" class="text-muted mb-0 text-truncate">Owner's name</a>
                             </div>
                             <div class="col-sm-8">
                                 <div class="row pt-4">
                                     <div class="col-6">
-                                        <p class="mb-0">##</p>
-                                        <label class="text-muted mb-0">Total Appointments</label>
+                                        <p class="mb-0">Species:</p>
+                                        <label class="text-muted mb-0">Dog</label>
                                     </div>
                                     <div class="col-6">
-                                        <p class="mb-0">##</p>
-                                        <label class="text-muted mb-0">Patients</label>                                      
+                                        <p class="mb-0">Age:</p>
+                                        <label class="text-muted mb-0">4</label>                                      
                                     </div>
                                 </div>
                                 <div class="row pt-4">
                                     <div class="col-6">
-                                        <p class="mb-0">##</p>
-                                        <label class="text-muted mb-0">Receptionists</label>
+                                        <p class="mb-0">Breed:</p>
+                                        <label class="text-muted mb-0">Syberian Husky</label>
                                     </div>
                                     <div class="col-6">
-                                        <p class="mb-0">##</p>
-                                        <label class="text-muted mb-0">Customers</label>                                      
+                                        <p class="mb-0">Weight:</p>
+                                        <label class="text-muted mb-0">20 Kg</label>                                      
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="card mt-2 mb-2 shadow-sm">
                     <div class="card-body">
-                        <p class="card-title mb-4">Monthly Earning</p>
+                        <p class="card-title mb-4 fw-bold">Monthly Expenses</p>
                         <div class="row">
                             <div class="col-sm-6"></div>
                             <div class="col-sm-6"></div>
@@ -68,15 +68,15 @@
             </div>
             <div class="col-xl-8">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <div class="card shadow-sm">
                             <div class="card-body">
-                                <h6 class="text-muted">Today's Appointments</h6>
+                                <h6 class="text-muted">Total Appointments</h6>
                                 <a class="h4" href="#">0</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <div class="card shadow-sm">
                             <div class="card-body">
                                 <h6 class="text-muted">Tomorrow's Appointments</h6>
@@ -84,20 +84,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h6 class="text-muted">Upcoming Appointments</h6>
-                                <a class="h4" href="#">10</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="card mt-4 mb-4">
-                    <div class="card-body">
-                        <h4 clas="card-title">Charts card...</h4>
-                        <p>or something like that</p>
-                        <BarChart />
+                    <div class="card-body shadow-sm">
+                        <h4 class="card-title">Medical Information</h4>
                     </div>
                 </div>
             </div>
@@ -105,10 +95,10 @@
                 <div class="col-lg-12">
                     <div class="card shadow-sm">
                         <div class="card-title mt-3 ms-3">
-                            <h4>Today's Appointments</h4> 
+                            <h4>Recent Appointments</h4> 
                         </div>
                         <div class="card-body">
-                            <Appointments />
+                            <Appointments/>
                         </div>
                     </div>
                 </div>
@@ -120,15 +110,13 @@
 
 <script>
 // import Personal from './Personal.vue'
-import BarChart from '../BarChart.vue'
-import TopNav from '../doctor/DocTopNav.vue'
-import Appointments from '../Appointments.vue'
+// import BarChart from '../BarChart.vue'
+import Appointments from './PatientAppointments.vue'
 
 export default {
     components: {
-        //Personal,
-        TopNav,
-        BarChart,
+        // Personal,
+        // BarChart,
         Appointments
     }
 }

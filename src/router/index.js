@@ -6,6 +6,8 @@ import AdminDocs from '../views/admin/doctors.vue'
 import DocDocs from '../views/doctor/doctors.vue'
 import DocProfile from '../views/doctor/profile.vue'
 import PatientProfile from '../views/patient/profile.vue'
+import PatientDocs from '../views/patient/doctors.vue'
+import PatientApps from '../views/patient/patientApp.vue'
 
 const routes = [
   {
@@ -50,7 +52,18 @@ const routes = [
     path: '/patient',
     name: 'Patient',
     component: PatientProfile
+  },
+  {
+    path: '/patient/docs',
+    name: 'PatientDocs',
+    component: PatientDocs
+  },
+  {
+    path: '/patient/appointments',
+    name: 'PatientAppointments',
+    component: PatientApps
   }
+
 
 ]
 

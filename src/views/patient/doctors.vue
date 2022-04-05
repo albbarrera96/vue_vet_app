@@ -1,25 +1,24 @@
 <template>
   <Navbar />
-  <TopNav />
-    <div class="container-fluid">
-    <Dash />
+  <TopNav/>
+  <div class="container-lg">
+    <DocList :AddNewDoctor = false />
   </div>
-  <footer>
-  </footer>
+  
 </template>
 
 <script>
 
 import Navbar from '@/components/Navbar.vue'
-import Dash from '@/components/patient/PatientDash.vue'
 import TopNav from '@/components/patient/PatientTopNav.vue'
+import DocList from '@/components/Doctors.vue'
 
 export default {
-    name: 'PatientProfile',
+    name: 'DocProfile',
     components: {
         Navbar,
-        Dash,
-        TopNav
+        TopNav,
+        DocList
     }
 }
 </script>

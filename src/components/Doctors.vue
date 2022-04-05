@@ -1,8 +1,10 @@
 <template>
-    <div class="table-responsive">
-        <table class="table table-light table-striped table-hover mt-5">
+    <div class="card mt-4 shadow-sm">
+        <div class="card-body">
+                <div class="table-responsive">
+        <table class="table table-light table-striped table-hover">
             <thead>
-                <h3>Doctors</h3>
+                <h3>Doctors List</h3>
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">ID</th>
@@ -33,7 +35,7 @@
         <div class="collapse mt-4 mb-4" id="collapseExample">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="card px-4 shadow-sm py-4">
+                    <div class="px-4 py-4">
                         <p class="h4">Basic Information</p>
                         <div class="row">
                             <div class="col-md-6">
@@ -134,6 +136,8 @@
             </div>
         </div>       
     </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -152,7 +156,16 @@ export default {
                 },
                 {
                     code: 'D103', id: '123456789', name: 'Doctor Faustus', phoneNo: '555-55555', email: 'drfaustus@gmail.com'
-                }       
+                },
+                                {
+                    code: 'D104', id: '123456789', name: 'Doctor Stein', phoneNo: '555-55555', email: 'drstein@gmail.com'
+                },
+                                {
+                    code: 'D105', id: '123456789', name: 'Doctor House', phoneNo: '555-55555', email: 'drhouse@gmail.com'
+                },
+                                {
+                    code: 'D106', id: '123456789', name: "Doctor D'Epinay", phoneNo: '555-55555', email: 'drdepinay@gmail.com'
+                },       
             ],            
         }
     },
