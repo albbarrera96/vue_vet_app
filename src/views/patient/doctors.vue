@@ -4,7 +4,7 @@
     <div class="container-lg">
         <div class="page-title-box d-flex align-items-center justify-content-between mt-4">
           <h4 class="mb-0 font-size-18">DOCTORS LIST</h4>
-          <a class="page-title-right link-dark" href="/#/receptionist">Return to your Dashboard</a>
+          <router-link class="page-title-right link-dark" to="/patient">Return to your Dashboard</router-link>
         </div>
       <DocList :AddNewDoctor = false />
     </div>
@@ -14,11 +14,11 @@
 <script>
 
 import Navbar from '@/components/Navbar.vue'
-import TopNav from '@/components/patient/PatientTopNav.vue'
+import TopNav from '@/components/patient/PatientTopnav.vue'
 import DocList from '@/components/Doctors.vue'
 
 export default {
-    name: 'DocProfile',
+    name: 'PatientDocs',
     components: {
         Navbar,
         TopNav,

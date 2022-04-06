@@ -12,7 +12,7 @@
 
 import Navbar from '@/components/Navbar.vue'
 import Dash from '@/components/patient/PatientDash.vue'
-import TopNav from '@/components/patient/PatientTopNav.vue'
+import TopNav from '@/components/patient/PatientTopnav.vue'
 
 export default {
     name: 'PatientProfile',

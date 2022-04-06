@@ -10,7 +10,7 @@
 <script>
 import AppointmentList from '@/components/patient/PatientAppointments.vue'
 import Navbar from '@/components/Navbar.vue'
-import TopNav from '@/components/patient/PatientTopNav.vue'
+import TopNav from '@/components/patient/PatientTopnav.vue'
 
 export default {
     components: {
