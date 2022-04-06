@@ -16,21 +16,21 @@
                                 </div>
                             </div>
                             <div class="card-body pt-3">
-                                <form class="py-4" action="">
+                                <form class="py-4" v-on:submit.prevent>
                                     <div class="mb-2">
-                                        <label for="exampleInputEmail1" class="form-label">Username or Email</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <label for="exampleInputEmail1" class="form-label">User or Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" v-model="usuario">
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                        <input type="password" class="form-control" id="exampleInputPassword1" v-model="password">
                                     </div>
                                     <div class="mb-3 form-check">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                     </div>
                                     <div class="d-grid gap-2">
-                                        <a href="/#/admin" type="submit" class="btn btn-dark">Submit</a>
+                                        <router-link to="/admin" type="submit" class="btn btn-dark" @click = login()>Submit</router-link>
                                     </div>
                                     <div class="col-lg-12 text-center">
                                         <div class="row mt-4">
@@ -38,7 +38,7 @@
                                                 <label for="exampleInputEmail1" class="form-label">Log in as an Admin</label>
                                             </div>
                                             <div class="col">
-                                                <a href="/#/admin" class="btn btn-dark">Log In</a>
+                                                <router-link to="/admin" class="btn btn-dark">Log In</router-link>
                                             </div>  
                                         </div>
                                         <div class="row mt-4">
@@ -46,7 +46,7 @@
                                                 <label for="exampleInputEmail1" class="form-label">Log in as a Doctor</label>
                                             </div>
                                             <div class="col">
-                                                <a href="/#/doctor" class="btn btn-dark">Log In</a>
+                                                <router-link to="/doctor" class="btn btn-dark">Log In</router-link>
                                             </div>  
                                         </div>
                                         <div class="row mt-4">
@@ -54,7 +54,7 @@
                                                 <label for="exampleInputEmail1" class="form-label">Log in as a Receptionist</label>
                                             </div>
                                             <div class="col">
-                                                <a href="/#/receptionist" class="btn btn-dark">Log In</a>
+                                                <router-link to="/receptionist" class="btn btn-dark">Log In</router-link>
                                             </div>  
                                         </div>
                                         <div class="row mt-4">
@@ -62,7 +62,7 @@
                                                 <label for="exampleInputEmail1" class="form-label">Log in as a Client</label>
                                             </div>
                                             <div class="col">
-                                                <a href="/#/owner" class="btn btn-dark">Log In</a>
+                                                <router-link to="/client" class="btn btn-dark">Log In</router-link>
                                             </div>  
                                         </div>                                                                                                                           
                                     </div>
@@ -76,3 +76,33 @@
     </div>
 
 </template>
+
+<script>
+    import axios from 'axios'
+export default {
+    components: {
+        axios
+    },
+
+    data() {
+        return {
+            usuario: "",
+            password: "",
+            error: false,
+            errorMsg: ''
+        }
+    },
+    methods: {
+        login() {
+            let json = {
+                "usuario": this.usuario,
+                "password": this.password,
+            };
+            axios.post('http://solodata.es/auth', json)
+            .then( data =>{
+                console.log(data)
+            })
+        }
+    },
+}
+</script>

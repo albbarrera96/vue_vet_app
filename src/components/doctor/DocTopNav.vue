@@ -8,7 +8,7 @@
                 Doctors
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDoctors">
-                <li><a class="dropdown-item" href="/#/doctor/docs">Doctors List</a></li>
+                <li><router-link class="dropdown-item" to="/doctor/docs">Doctors List</router-link></li>
               </ul>
             </li>
             <!------>
@@ -17,17 +17,17 @@
                 Receptionists
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownReceptionists">
-                <li><a class="dropdown-item" href="#">Receptionists List</a></li>
+                <li><router-link class="dropdown-item" to="#">Receptionists List</router-link></li>
               </ul>
             </li>
             <!-------->    
             <li class="nav-item dropdown ms-4">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPatients" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <router-link class="nav-link dropdown-toggle" to="#" id="navbarDropdownPatients" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Patients
-              </a>
+              </router-link>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownPatients">
-                <li><a class="dropdown-item" href="#">Patients List</a></li>
-                <li><a class="dropdown-item" href="#">Add a new Patient</a></li>  
+                <li><router-link class="dropdown-item" href="#">Patients List</router-link></li>
+                <li><router-link class="dropdown-item" href="#">Add a new Patient</router-link></li>  
               </ul>
             </li>
             <!------>
@@ -36,10 +36,10 @@
                 Owners
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownOwners">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><router-link class="dropdown-item" to="#">Action</router-link></li>
+                <li><router-link class="dropdown-item" to="#">Another action</router-link></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>    
+                <li><router-link class="dropdown-item" to="#">Something else here</router-link></li>    
               </ul>
             </li>
             <!------>

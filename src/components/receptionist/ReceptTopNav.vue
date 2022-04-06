@@ -8,8 +8,8 @@
                 Doctors
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDoctors">
-                <li><router-link class="dropdown-item" to="/admin/docs">Doctors List</router-link></li>
-                <li><router-link class="dropdown-item" to="/admin/docs">Add new doctor</router-link></li>
+                <li><router-link class="dropdown-item" to="/receptionist/docs">Doctors List</router-link></li>
+                <li><router-link class="dropdown-item" to="/receptionist/docs">Add new doctor</router-link></li>
               </ul>
             </li>
             <!------>
@@ -18,8 +18,8 @@
                 Receptionists
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownReceptionists">
-                <li><router-link class="dropdown-item" to="#">Receptionists List</router-link></li>
-                <li><router-link class="dropdown-item" to="#">Add new Receptionist</router-link></li>
+                <li><a class="dropdown-item" href="#">Receptionists List</a></li>
+                <li><a class="dropdown-item" href="#">Add new Receptionist</a></li>
               </ul>
             </li>
             <!-------->    
@@ -28,8 +28,8 @@
                 Patients
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownPatients">
-                <li><router-link class="dropdown-item" to="#">Patients</router-link></li>
-                <li><router-link class="dropdown-item" to="#">Add New Patient</router-link></li> 
+                <li><a class="dropdown-item" href="#">Patients</a></li>
+                <li><a class="dropdown-item" href="#">Add New Patient</a></li> 
               </ul>
             </li>
             <!------>

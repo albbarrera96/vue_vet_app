@@ -146,9 +146,16 @@ export default {
     },
     data() {
         return {
+            FirstName: "",
+            LastName: "",
+            Email: "",
+            Title: "",
+            Degree: "",
+            Experience: "",
+            Fees: "",
             Doctors: [
                 {
-                    code: 'D101', id: '123456789', name: 'Doctor Mengueche', phoneNo: '555-12345', email: 'drmengueche@gmail.com'
+                    code: 'D101', id: '123456789', name: 'Doctor Freeze', phoneNo: '555-12345', email: 'drfreeze@gmail.com'
                 },
                 {
                     code: 'D102', id: '123456789', name: 'Doctor Strange', phoneNo: '555-54321', email: 'drstrange@gmail.com'

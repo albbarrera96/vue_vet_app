@@ -8,6 +8,8 @@ import DocProfile from '../views/doctor/profile.vue'
 import PatientProfile from '../views/patient/profile.vue'
 import PatientDocs from '../views/patient/doctors.vue'
 import PatientApps from '../views/patient/patientApp.vue'
+import ReceptProfile from '../views/receptionist/profile.vue'
+import ReceptDocs from '../views/receptionist/doctors.vue'
 
 const routes = [
   {
@@ -62,6 +64,16 @@ const routes = [
     path: '/patient/appointments',
     name: 'PatientAppointments',
     component: PatientApps
+  },
+  {
+    path: '/receptionist',
+    name: 'Receptionist',
+    component: ReceptProfile
+  },
+  {
+    path: '/receptionist/docs',
+    name: 'ReceptDocs',
+    component: ReceptDocs
   }
 
 
